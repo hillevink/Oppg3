@@ -1,0 +1,49 @@
+//// ------------------------------------------------------
+//// THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+//// ------------------------------------------------------
+
+Table Lunch {
+  id String [pk]
+  weeks Week [not null]
+}
+
+Table Week {
+  id String [pk]
+  week String [not null]
+  lunch Lunch [not null]
+  lunchId String [not null]
+  days Day [not null]
+  overrides Override [not null]
+}
+
+Table Override {
+  id String [pk]
+  weekDay String [not null]
+  employeeName String [not null]
+  week Week
+  weekId String
+}
+
+Table Day {
+  id String [pk]
+  name String [not null]
+  week Week [not null]
+  weekId String [not null]
+  employee Employee
+  employeeId Int
+}
+
+Table Employee {
+  id Int [pk, increment]
+  name String [not null]
+  rules String [not null]
+  day Day [not null]
+}
+
+Ref: Week.lunchId > Lunch.id
+
+Ref: Override.weekId > Week.id
+
+Ref: Day.weekId > Week.id
+
+Ref: Day.employeeId > Employee.id

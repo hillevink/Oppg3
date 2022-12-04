@@ -1,0 +1,116 @@
+.allWeeks {
+  h1 {
+    margin: 3rem 0 3rem 0;
+    font-size: xx-large;
+  }
+
+  .weekFilter {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 1rem;
+
+    label {
+      font-size: 180%;
+      font-weight: 600;
+    }
+
+    input {
+      width: 7rem;
+      height: 3rem;
+      background-color: white;
+      color: black;
+      font-size: 1.9rem;
+      border: 1px solid #ddd; 
+      margin-right: 2rem;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 150%;
+    }
+  }
+
+  #search {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-top: 2rem;
+
+    input {
+      width: 20rem;
+      height: 3rem;
+      background-color: white;
+      color: black;
+      font-size: 1.7rem;
+      border: 1px solid #ddd;
+    }
+
+    a {
+      font-size: 180%;
+      text-decoration: none;
+      border: 1px solid #ddd;
+      width: 10rem;
+      text-align: center;
+    }
+  }
+
+  .excelForm {
+    padding: 2rem 0;
+    input {
+      border: 1px solid white;
+      height: 4rem;
+      width: 20rem;
+      font-size: medium;
+    }
+  }
+
+  .weekBtn ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 5rem 0;
+    border-bottom: 0.2rem solid white;
+
+    li {
+      border: 3px solid;
+      border-color: white;
+      padding: 1rem;
+      width: 5rem;
+      height: 5rem;
+      margin: 6px;
+      text-align: center;
+      font-size: 200%;
+      font-weight: bold;
+    }
+  }
+
+  #lunchCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-top: 2rem;
+    justify-content: flex-start;
+
+    article {
+      border: 1px solid white;
+      width: 16rem;
+      padding: 1rem;
+
+      h2 {
+        font-size: 200%;
+        text-decoration: underline;
+      }
+
+      li {
+        font-size: 150%;
+
+        .day {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

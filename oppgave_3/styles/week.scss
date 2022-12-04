@@ -1,0 +1,48 @@
+.weekInfo {
+  h2 {
+    font-size: xx-large;
+    padding-top: 1rem;
+  }
+
+  h4 {
+    font-size: x-large;
+    text-decoration: underline;
+    padding-top: 1rem;
+  }
+
+  p {
+    font-size: x-large;
+  }
+
+  .override {
+    h3 {
+      font-size: x-large;
+      padding-top: 2rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 20rem;
+
+      label {
+        display: flex;
+        flex-direction: column;
+        font-size: large;
+        gap: 0.5rem;
+        padding-top: 1rem;
+
+        select {
+          background-color: white;
+        }
+      }
+
+      input {
+        border: 1px solid white;
+        height: 4rem;
+        font-size: large;
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}

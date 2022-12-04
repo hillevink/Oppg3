@@ -1,0 +1,30 @@
+.navigation {
+  // background-color: rgb(29, 28, 28);
+  color: white;
+  border-bottom: 0.2rem solid white;
+  
+  ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 3rem;
+
+    li a {
+      text-decoration: none;
+    }
+  }
+
+  .first {
+    text-transform: uppercase;
+    font-size: 300%;
+    font-weight: bold;
+    color: white;
+    padding-left: 8rem;
+  }
+
+  .second {
+    font-size: 250%;
+    padding-right: 10rem;
+    color: white;
+  }
+}

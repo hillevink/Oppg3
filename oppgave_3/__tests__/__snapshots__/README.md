@@ -1,0 +1,1 @@
+Hjelp til oppsett av vitest er hentet her: https://waresix.engineering/vitest-unit-testing-to-test-react-application-177ade1e6c1b
